@@ -10,6 +10,37 @@ p {
   border-right: 1px solid #bebbc5;
 }
 
-input {
+input:not([type='checkbox']) {
   height: 38px;
+}
+
+input:disabled {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+::placeholder {
+  opacity: 50%;
+}
+.form-check-input {
+  height: 25px;
+  width: 25px;
+}
+
+.form-check-input:checked[type='checkbox'] {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.nav-tabs .nav-link.active {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 3px solid #212529;
+}
+.nav-tabs .nav-link:focus,
+:hover {
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
