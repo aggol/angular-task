@@ -32,15 +32,30 @@ input:disabled {
   border-color: #212529;
 }
 
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  color: #212529;
   border-left: none;
   border-right: none;
   border-top: none;
+}
+.nav-tabs .nav-link.active {
   border-bottom: 3px solid #212529;
 }
+
 .nav-tabs .nav-link:focus,
-:hover {
-  border-left: none;
-  border-right: none;
-  border-top: none;
+.nav-tabs .nav-link:hover {
+  cursor: pointer;
+}
+
+/* .nav-tabs > li.active > h6,
+.nav-tabs > li.active > h6:focus,
+.nav-tabs > li.active > h6:hover {
+  border: 0;
+  color: #212529;
+} */
+
+.nav-tabs .nav-link {
+  color: #aaafbc;
 }
