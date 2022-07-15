@@ -1,0 +1,15 @@
+p {
+  font-family: TTNorms-Medium;
+}
+
+.divider-btm {
+  border-bottom: 1px solid #bebbc5;
+}
+
+.divider-rght {
+  border-right: 1px solid #bebbc5;
+}
+
+input {
+  height: 38px;
+}
