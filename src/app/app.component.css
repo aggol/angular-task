@@ -66,3 +66,20 @@ button:disabled {
   background-color: #eaeaea;
   border-color: #eaeaea;
 }
+
+.warning {
+  background-color: #f3f3f3;
+  height: 38px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.warning span {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+svg {
+  display: block;
+}
