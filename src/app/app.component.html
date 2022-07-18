@@ -1,8 +1,8 @@
 <div class="container">
+  <div class="row divider-btm">
+    <div class="col-12"></div>
+  </div>
   <div class="form">
-    <div class="row divider-btm">
-      <div class="col-12"></div>
-    </div>
     <div class="row">
       <div class="col-8 divider-rght">
         <div class="row mt-5 mb-5">
@@ -10,124 +10,12 @@
             <h4>
               <span>New meeting</span>
             </h4>
-            <div class="row mt-5">
-              <h5>
-                <span>Meeting type</span>
-              </h5>
-              <div class="col-12 mt-2">
-                <button type="button" class="btn btn-outline-dark">
-                  Board meeting
-                </button>
-                <button type="button" class="btn btn-outline-dark ms-3">
-                  General assembly
-                </button>
-                <button type="button" class="btn btn-outline-dark ms-3">
-                  Other
-                </button>
-              </div>
-              <div class="col-9 mt-3">
-                <div class="small warning">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      class="bi bi-exclamation-circle"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                      />
-                      <path
-                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
-                      />
-                    </svg>
-                  </span>
 
-                  <span>
-                    This meeting will be attended by all shareholders. Mind what
-                    you're sharing.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <h5>
-                <label>Meeting name</label>
-              </h5>
-              <div class="col-10 mt-2">
-                <input
-                  type="search"
-                  class="form-control"
-                  value="CompanyName Board meeting No.12"
-                />
-              </div>
-            </div>
-
-            <div class="row mt-5">
-              <h5>
-                <label>Date and time</label>
-              </h5>
-              <div class="col-10 mt-2">
-                <div class="input-group">
-                  <!-- <input
-                class="form-control"
-                placeholder="dd/mmm/yyyy"
-                name="dp"
-                [(ngModel)]="model"
-                ngbDatepicker
-                #d="ngbDatepicker"
-              /> -->
-                  <!-- <button
-                  class="btn btn-outline-secondary calendar"
-                  (click)="d.toggle()"
-                  type="button"
-                ></button> -->
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <h5>
-                <label>Location</label>
-              </h5>
-              <div class="col-10 mt-2">
-                <div class="form-check mb-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="address"
-                  />
-                  <label class="form-check-label ms-2 mt-1" for="address"
-                    >Address</label
-                  >
-                </div>
-                <input
-                  type="search"
-                  class="form-control mb-3"
-                  placeholder="Address..."
-                  disabled
-                />
-                <div class="form-check mb-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="online"
-                    checked
-                  />
-                  <label class="form-check-label ms-2 mt-1" for="online"
-                    >Online meeting</label
-                  >
-                </div>
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Paste meeting link..."
-                />
-              </div>
-            </div>
+            <app-meeting-type></app-meeting-type>
+            <app-meeting-name></app-meeting-name>
+            <app-date-and-time></app-date-and-time>
+            <app-location></app-location>
+            
           </div>
         </div>
       </div>

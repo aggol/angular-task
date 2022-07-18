@@ -18,6 +18,7 @@ input:disabled {
 ::placeholder {
   opacity: 50%;
 }
+
 .form-check-input {
   height: 25px;
   width: 25px;
@@ -61,25 +62,9 @@ input:disabled {
   font-size: 0.75rem;
 }
 
-button:disabled {
+app-meeting-type button:disabled,
+app-invitees-guests button:disabled {
   color: #aaafbc;
   background-color: #eaeaea;
   border-color: #eaeaea;
-}
-
-.warning {
-  background-color: #f3f3f3;
-  height: 45px;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-}
-
-.warning span {
-  margin-left: 0.5rem;
-  font-weight: 500;
-}
-
-svg {
-  display: block;
 }

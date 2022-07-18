@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { MeetingTypeComponent } from './components/meeting-type/meeting-type.component';
+import { MeetingNameComponent } from './components/meeting-name/meeting-name.component';
+import { DateAndTimeComponent } from './components/date-and-time/date-and-time.component';
+import { LocationComponent } from './components/location/location.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    MeetingTypeComponent,
+    MeetingNameComponent,
+    DateAndTimeComponent,
+    LocationComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
