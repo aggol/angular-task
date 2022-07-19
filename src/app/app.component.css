@@ -29,25 +29,26 @@ input:disabled {
   border-color: #212529;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-item .nav-link.active,
+.nav-tabs .nav-item .nav-link:focus,
+.nav-tabs .nav-item .nav-link:hover {
   color: #212529;
   border-left: none;
   border-right: none;
   border-top: none;
 }
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-item button.nav-link.active {
   border-bottom: 3px solid #212529;
 }
 
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-item .nav-link:focus,
+.nav-tabs .nav-item .nav-link:hover {
   cursor: pointer;
 }
 
-.nav-tabs .nav-link {
+.nav-item .nav-link {
   color: #aaafbc;
+  font-weight: 500;
 }
 
 .search {

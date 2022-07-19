@@ -7,6 +7,8 @@ import { MeetingTypeComponent } from './components/meeting-type/meeting-type.com
 import { MeetingNameComponent } from './components/meeting-name/meeting-name.component';
 import { DateAndTimeComponent } from './components/date-and-time/date-and-time.component';
 import { LocationComponent } from './components/location/location.component';
+import { InviteesBoardComponent } from './components/invitees-board/invitees-board.component';
+import { InviteesGuestsComponent } from './components/invitees-guests/invitees-guests.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,6 +18,8 @@ import { LocationComponent } from './components/location/location.component';
     MeetingNameComponent,
     DateAndTimeComponent,
     LocationComponent,
+    InviteesBoardComponent,
+    InviteesGuestsComponent,
   ],
   bootstrap: [AppComponent],
 })

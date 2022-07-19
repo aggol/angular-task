@@ -1,0 +1,20 @@
+.nav-link {
+  color: #aaafbc;
+  font-weight: 500;
+}
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #212529;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.nav-link.active {
+  border-bottom: 3px solid #212529;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  cursor: pointer;
+}
